@@ -50,7 +50,7 @@ const Header = () => {
                     {navList.map((item) => (
                         <a
                             key={item.id}
-                            href="#"
+                            href={item.link}
                             className="text-lg font-medium text-white hover:text-purple-500 border-b-2 border-transparent hover:border-purple-500"
                         >
                             {item.data}
