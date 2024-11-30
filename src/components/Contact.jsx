@@ -59,47 +59,50 @@ const ContactPage = () => {
             <div className="max-w-2xl mx-auto px-4">
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                        <label htmlFor="name" className="block text-gray-300 mb-2">Name</label>
+                        <label htmlFor="name" className="block font-medium text-purple-400 mb-2">Name</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
+                            placeholder="Enter Name..."
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            className="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full p-3 bg-gray-800 text-white border-1 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block text-gray-300 mb-2">Email</label>
+                        <label htmlFor="email" className="block font-medium text-purple-400 mb-2">Email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
+                            placeholder="Enter Email..."
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full p-3 bg-gray-800 border-1 border-purple-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
+                        <label htmlFor="message" className="block font-medium text-purple-400 mb-2">Message</label>
                         <textarea
                             id="message"
                             name="message"
+                            placeholder="Enter Message..."
                             value={formData.message}
                             onChange={handleChange}
                             required
-                            className="w-full p-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            className="w-full p-3 bg-gray-800 text-white border-1 border-purple-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
                         ></textarea>
                     </div>
 
                     <div className="text-center">
                         <button
                             type="submit"
-                            className="px-8 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg"
+                            className='px-4 mr-2 sm:px-6 py-2 rounded-full text-purple-400 border-2 border-purple-400 font-semibold hover:bg-purple-500 hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)]'
                         >
                             Send Message
                         </button>

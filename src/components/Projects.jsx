@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Button from './Button';
 import recieasy from '../assets/recieasy.png';
 import climate from '../assets/climate.png';
 import glamio from '../assets/glamio.png';
@@ -63,28 +64,22 @@ const ProjectsPage = () => {
                             <h3 className="text-2xl font-semibold text-white mb-4">{project.name}</h3>
                             <p className="text-gray-300 mb-4">{project.description}</p>
                             <p className="text-gray-400 mb-4"><strong>Domain:</strong> {project.domain}</p>
-                            <p className="text-gray-400 mb-4"><strong>Tech Stack:</strong> {project.techStack}</p>
-                            {project.githubLink && (<a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="inline-block text-center px-6 py-2 bg-purple-500 hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] text-white rounded-lg mr-4">GitHub Link</a>)}
-                            {project.demoLink && (<a
-                                href={project.demoLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block text-center px-6 py-2 bg-purple-500 hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] text-white rounded-lg"
-                            >
-                                View Demo
-                            </a>)}
+                            <p className="text-gray-400 mb-8"><strong>Tech Stack:</strong> {project.techStack}</p>
+                            {project.githubLink && (<Button text="GitHub" href={project.demoLink}></Button>)}
+                            {project.demoLink && (
+                                <Button text="Demo" href={project.demoLink}></Button>)}
                         </div>
 
                         <div className="flex-1">
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className="w-full p-20 box-border h-auto rounded-lg shadow-lg hover:p-18 transition"
+                                className="w-full box-border h-auto rounded-lg shadow-lg hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] hover:scale-105 transition duration-300 "
                             />
                         </div>
                     </div>
                 ))}
-                <p className='text-center text-lg mr-2'>Check out more of my works on <a href='https://github.com/tharikashree/' className="inline-block text-center px-6 py-2 bg-purple-500 hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] text-white rounded-lg">Github</a>  </p>
+                <p className='text-center text-lg mr-2'>Check out more of my works on <a href='https://github.com/tharikashree/' className='px-4 ml-2 sm:px-6 py-2 rounded-full text-purple-400 border-2 border-purple-400 font-semibold hover:bg-purple-500 hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)]'>Github</a>  </p>
             </div>
         </div>
     );

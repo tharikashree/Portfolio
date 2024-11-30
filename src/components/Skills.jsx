@@ -41,7 +41,7 @@ const SkillsPage = () => {
                 {skills.map((skill) => (
                     <div
                         key={skill.id}
-                        className="flex flex-col items-center bg-purple-500 bg-opacity-30 p-5 rounded-lg shadow-md hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)]"
+                        className="flex flex-col items-center px-4 py-5 mr-2 sm:px-6 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold hover:bg-purple-500 hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)]"
                     >
                         <img src={skill.icon} alt={skill.name} className="w-16 h-16 m-1" />
                         
