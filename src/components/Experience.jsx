@@ -6,9 +6,9 @@ const ExperiencePage = () => {
     const experiences = [
         {
             id: 1,
-            company: 'Springreen',
+            company: 'iPixxel',
             role: 'Frontend Developer',
-            duration: 'Nov 2024 - Present',
+            duration: 'Oct 2024 - Dec 2024',
         },
         {
             id: 2,
@@ -30,13 +30,13 @@ const ExperiencePage = () => {
         <div className="bg-black text-white p-8 min-h-screen">
             <Header />
             <header className="text-center mt-10 mb-8">
-                <h1 className="text-4xl font-bold mb-16 text-purple-400">Experience & Achievemants</h1>
+                <h1 className="text-4xl font-bold mb-16 text-purple-400">Experience & Achievements</h1>
                 
             </header>
 
             <div className="space-y-10 flex items-center flex-col text-center gap-8">
                 {experiences.map((experience) => (
-                    <div key={experience.id} className="flex flex-col w-1/2 px-8 py-6 mr-2 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold hover:bg-purple-500 hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] sm:flex-row items-center justify-between gap-8">
+                    <div key={experience.id} className="flex flex-col w-1/2 px-8 py-6 mr-2 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold  hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] sm:flex-row items-center justify-between gap-8">
                         <div className="flex-1 ">
                             <h3 className="text-xl font-semibold text-white mb-2 sm:text-2xl ">{experience.company}</h3>
                             <p className="text-gray-300 mb-2"><strong>Role:</strong> {experience.role}</p>
