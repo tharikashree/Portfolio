@@ -6,15 +6,15 @@ const ExperiencePage = () => {
     const experiences = [
         {
             id: 1,
-            company: 'iPixxel',
-            role: 'Frontend Developer Intern',
-            duration: 'Oct 2024 - Dec 2024',
-        },
-        {
-            id: 2,
             company: 'InnoSynth',
             role: 'Jr Python Developer Intern',
             duration: 'Mar 2025 - Present',
+        },
+        {
+            id: 2,
+            company: 'iPixxel',
+            role: 'Frontend Developer Intern',
+            duration: 'Oct 2024 - Dec 2024',
         },
         {
             id: 3,
@@ -42,7 +42,7 @@ const ExperiencePage = () => {
 
             <div className="space-y-10 flex items-center flex-col text-center gap-8">
                 {experiences.map((experience) => (
-                    <div key={experience.id} className="flex flex-col w-1/2 px-8 py-6 mr-2 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold  hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] sm:flex-row items-center justify-between gap-8">
+                    <div key={experience.id} className="flex flex-col w-1/2 px-8 py-6 mr-2 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold  hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)] hover:scale-105 transition duration-300  sm:flex-row items-center justify-between gap-8">
                         <div className="flex-1 ">
                             <h3 className="text-xl font-semibold text-white mb-2 sm:text-2xl ">{experience.company}</h3>
                             <p className="text-gray-300 mb-2"><strong>Role:</strong> {experience.role}</p>
