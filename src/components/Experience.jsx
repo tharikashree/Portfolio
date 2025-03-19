@@ -7,18 +7,24 @@ const ExperiencePage = () => {
         {
             id: 1,
             company: 'iPixxel',
-            role: 'Frontend Developer',
+            role: 'Frontend Developer Intern',
             duration: 'Oct 2024 - Dec 2024',
         },
         {
             id: 2,
+            company: 'InnoSynth',
+            role: 'Jr Python Developer Intern',
+            duration: 'Mar 2025 - Present',
+        },
+        {
+            id: 3,
             company: 'GirlScript Summer of Code',
             role: 'Contributor',
             proof: 'https://www.linkedin.com/posts/tharika-shree-r_opensource-gssoc-apidevelopment-activity-7265340689251471360-3QhX',
             duration: 'Oct 2024 - Nov 2024',
         },
         {
-            id: 3,
+            id: 4,
             company: 'Hacktoberfest',
             role: 'Open Source Contributor',
             proof: 'https://holopin.me/tharikashree',
