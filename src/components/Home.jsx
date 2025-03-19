@@ -29,6 +29,7 @@ const Home = () => {
                                 sequence={
                                     [
                                         "CSE Student", 1000,
+                                        "Python Developer", 1000,
                                         "Full Stack Developer", 1000,
                                         "Open Source Contributor", 1000,
                                         "AIML Enthusiast", 1000,
