@@ -3,7 +3,7 @@ import Header from './Header';
 
 const EducationPage = () => {
     const educationDetails = [
-        { id: 1, edu: 'Bachelor of Engineering, Computer Science', time: '2022 - 2026', name: 'Dayananda Sagar College of Engineering', gpa: '9.44', board: 'Autonomous' },
+        { id: 1, edu: 'Bachelor of Engineering, Computer Science', time: '2022 - 2026', name: 'Dayananda Sagar College of Engineering', gpa: '9.26', board: 'Autonomous' },
         { id: 2, edu: 'Pre-University', time: '2020 - 2022', name: 'Deeksha C F L PU College', percentage: '93', board: 'State Board' },
         { id: 3, edu: 'School', time: '2010 - 2020', name: 'Sudarshan Vidya Mandir', percentage: '94', board: 'ICSE Board' },
     ];
