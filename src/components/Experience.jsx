@@ -6,25 +6,30 @@ const ExperiencePage = () => {
     const experiences = [
         {
             id: 1,
+            company: 'Afame Technologies',
+            role: 'Data Analyst Intern',
+            duration: 'June 2025 - June 2025',
+        },{
+            id: 2,
             company: 'InnoSynth',
-            role: 'Jr Python Developer Intern',
+            role: 'Jr Python Developer',
             duration: 'Mar 2025 - Present',
         },
         {
-            id: 2,
+            id: 3,
             company: 'iPixxel',
             role: 'Frontend Developer Intern',
             duration: 'Oct 2024 - Dec 2024',
         },
         {
-            id: 3,
+            id: 4,
             company: 'GirlScript Summer of Code',
             role: 'Contributor',
             proof: 'https://www.linkedin.com/posts/tharika-shree-r_opensource-gssoc-apidevelopment-activity-7265340689251471360-3QhX',
             duration: 'Oct 2024 - Nov 2024',
         },
         {
-            id: 4,
+            id: 5,
             company: 'Hacktoberfest',
             role: 'Open Source Contributor',
             proof: 'https://holopin.me/tharikashree',

@@ -18,7 +18,8 @@ const icons = [
     , { id: 4,
         href: "https://www.instagram.com/tharika_shree_r/profilecard/?igsh=MWIxcWdhY3cwOWExdA==",
         components: <FaInstagram />
-    },{     id: 5,
+    },
+    {     id: 5,
         href: "https://www.cloudskillsboost.google/public_profiles/ccb77551-73a0-4052-8176-0a61a553df4c",
         components: <SiGooglecloud />
     }
