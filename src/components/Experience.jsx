@@ -27,8 +27,17 @@ const ExperiencePage = () => {
     };
 
     const experiences = [
-        {
+         {
             id: 1,
+            company: 'Netcracker Technology',
+            role: 'Business Analyst Intern',
+            proofs: [
+                { text: 'Offer Letter', url: 'https://drive.google.com/file/d/1gjhozN0DiM65yr4DFQv_BdjYDyJ4MLQ7/preview' },
+            ],
+            duration: 'February 2026 - Present',
+        },
+        {
+            id: 2,
             company: 'EISystems Technologies',
             role: 'Python Developer Intern',
             proofs: [
@@ -37,7 +46,7 @@ const ExperiencePage = () => {
             duration: 'July 2025 - September 2025',
         },
         {
-            id: 2,
+            id: 3,
             company: 'Polysia Innovate X',
             role: 'Research and Development Intern',
             proofs: [
@@ -46,7 +55,7 @@ const ExperiencePage = () => {
             duration: 'March 2025 - September 2025',
         },
         {
-            id: 3,
+            id: 4,
             company: 'Afame Technologies',
             role: 'Data Analyst Intern',
             proofs: [
@@ -55,7 +64,7 @@ const ExperiencePage = () => {
             ],
             duration: 'June 2025',
         },{
-            id: 4,
+            id: 5,
             company: 'InnoSynth',
             role: 'Jr Python Developer',
             proofs: [
@@ -64,7 +73,7 @@ const ExperiencePage = () => {
             duration: 'Mar 2025 - May 2025',
         },
         {
-            id: 5,
+            id: 6,
             company: 'iPixxel',
             role: 'Frontend Developer Intern',
             proofs: [
