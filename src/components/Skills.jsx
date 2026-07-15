@@ -1,54 +1,101 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs,FaJava } from 'react-icons/fa'; 
 import Header from './Header';
 
 const SkillsPage = () => {
-    const skills = [
-        { id: 1, name: 'HTML5', icon:"https://skillicons.dev/icons?i=html" },
-        { id: 2, name: 'CSS3',icon: "https://skillicons.dev/icons?i=css" },
-        { id: 3, name: 'JavaScript', icon: "https://skillicons.dev/icons?i=javascript" },
-        { id: 4, name: 'Node.js', icon: "https://skillicons.dev/icons?i=nodejs" },
-        { id: 5, name: 'Express.js', icon: "https://skillicons.dev/icons?i=expressjs" },
-        { id: 6, name: 'React', icon: "https://skillicons.dev/icons?i=react" },
-        { id: 7, name: 'Tailwind CSS', icon: "https://skillicons.dev/icons?i=tailwind" },
-        { id: 8, name: 'Git', icon: "https://skillicons.dev/icons?i=git" },
-        { id: 9, name: 'GitHub',icon: "https://skillicons.dev/icons?i=github" },
-        { id: 10, name: 'mySQL', icon: "https://skillicons.dev/icons?i=mysql" },
-        { id: 11, name: 'PostgreSQL', icon: "https://skillicons.dev/icons?i=postgresql" },
-        { id: 12, name: 'MongoDB', icon: "https://skillicons.dev/icons?i=mongodb" },
-        { id: 13, name: 'C', icon: "https://skillicons.dev/icons?i=c" },
-        { id: 14, name: 'C++', icon: "https://skillicons.dev/icons?i=cpp" },
-        { id: 15, name: 'Java', icon: "https://skillicons.dev/icons?i=java" },
-        { id: 16, name: 'Python', icon: "https://skillicons.dev/icons?i=python" },
-        { id: 17, name: 'Flask', icon: "https://skillicons.dev/icons?i=flask" },
-        { id: 18, name: 'Selenium', icon: "https://skillicons.dev/icons?i=selenium" },
-        { id: 19, name: 'Google Cloud Platform', icon: "https://skillicons.dev/icons?i=gcp" },
-        { id: 20, name: 'Postman', icon: "https://skillicons.dev/icons?i=postman" },
-        // { id: 21, name: 'Typescript', icon: "https://skillicons.dev/icons?i=ts" },
-        // { id:22, name: 'NextJs', icon: "https://skillicons.dev/icons?i=nextjs" },
+    // Grouping your technical skills by category for a cleaner presentation
+    const skillCategories = [
+        {
+            title: "Languages",
+            items: [
+                { name: 'Python', icon: "https://skillicons.dev/icons?i=python" },
+                { name: 'JavaScript', icon: "https://skillicons.dev/icons?i=javascript" },
+                { name: 'TypeScript', icon: "https://skillicons.dev/icons?i=ts" },
+                { name: 'Java', icon: "https://skillicons.dev/icons?i=java" },
+                { name: 'C++', icon: "https://skillicons.dev/icons?i=cpp" },
+                { name: 'C', icon: "https://skillicons.dev/icons?i=c" },
+                { name: 'HTML5', icon: "https://skillicons.dev/icons?i=html" },
+                { name: 'CSS3', icon: "https://skillicons.dev/icons?i=css" },
+            ]
+        },
+        {
+            title: "Libraries & Frameworks",
+            items: [
+                { name: 'React', icon: "https://skillicons.dev/icons?i=react" },
+                { name: 'Next.js', icon: "https://skillicons.dev/icons?i=nextjs" },
+                { name: 'FastAPI', icon: "https://skillicons.dev/icons?i=fastapi" },
+                { name: 'Node.js', icon: "https://skillicons.dev/icons?i=nodejs" },
+                { name: 'Express.js', icon: "https://skillicons.dev/icons?i=expressjs" },
+                { name: 'Flask', icon: "https://skillicons.dev/icons?i=flask" },
+                { name: 'Tailwind CSS', icon: "https://skillicons.dev/icons?i=tailwind" },
+                { name: 'Selenium', icon: "https://skillicons.dev/icons?i=selenium" },
+            ]
+        },
+        {
+            title: "Databases & Cloud",
+            items: [
+                { name: 'PostgreSQL', icon: "https://skillicons.dev/icons?i=postgresql" },
+                { name: 'MySQL', icon: "https://skillicons.dev/icons?i=mysql" },
+                { name: 'MongoDB', icon: "https://skillicons.dev/icons?i=mongodb" },
+                { name: 'Google Cloud', icon: "https://skillicons.dev/icons?i=gcp" },
+                { name: 'Docker', icon: "https://skillicons.dev/icons?i=docker" },
+            ]
+        },
+        {
+            title: "Developer Tools",
+            items: [
+                { name: 'Git', icon: "https://skillicons.dev/icons?i=git" },
+                { name: 'GitHub', icon: "https://skillicons.dev/icons?i=github" },
+                { name: 'Postman', icon: "https://skillicons.dev/icons?i=postman" },
+            ]
+        }
     ];
 
     return (
-        <div className="bg-black text-white min-h-screen p-8">
+        <div className="bg-neutral-950 text-neutral-100 min-h-screen font-sans selection:bg-purple-500 selection:text-black">
             <Header />
-            <header className="text-center  mt-10 mb-8">
-                <h1 className="text-4xl font-bold mb-2 text-purple-400">Skills</h1>
-                <p className="text-white text-xl mt-4">Technologies Known:</p>
-            </header>
+            
+            <main className="max-w-6xl mx-auto px-6 py-20">
+                {/* Header Section with Fix for Text Clipping */}
+                <div className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-fuchsia-500 inline-block py-2">
+                        Technical Skills
+                    </h1>
+                    <p className="text-neutral-400 mt-2 text-sm md:text-base">
+                        My technical toolkit and the technologies I use to build scalable applications.
+                    </p>
+                </div>
 
-            {/* Skills Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-                {skills.map((skill) => (
-                    <div
-                        key={skill.id}
-                        className="flex flex-col items-center px-4 py-5 mr-2 sm:px-6 rounded-3xl text-purple-400 border-2 border-purple-400 font-semibold hover:scale-105 transition duration-300 hover:text-black transition hover:shadow-[0_0_15px_3px_rgba(221,51,255,0.8)]"
-                    >
-                        <img src={skill.icon} alt={skill.name} className="w-16 h-16 m-1" />
-                        
-                        <h3 className="text-lg font-semibold text-white">{skill.name}</h3>
-                    </div>
-                ))}
-            </div>
+                {/* Categorized Skills Stack */}
+                <div className="space-y-12">
+                    {skillCategories.map((category, catIndex) => (
+                        <div key={catIndex} className="bg-neutral-900/20 border border-neutral-900 rounded-2xl p-6 md:p-8">
+                            <h2 className="text-xl font-bold text-purple-400 mb-6 tracking-wide border-b border-neutral-800 pb-2">
+                                {category.title}
+                            </h2>
+                            
+                            {/* Inner Responsive Grid */}
+                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                                {category.items.map((skill, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex items-center gap-3 bg-neutral-900/40 backdrop-blur-md border border-neutral-800/80 p-3.5 rounded-xl transition-all duration-300 hover:border-purple-500/40 hover:-translate-y-0.5 hover:shadow-[0_4px_20px_rgba(168,85,247,0.08)] group"
+                                    >
+                                        <img 
+                                            src={skill.icon} 
+                                            alt={skill.name} 
+                                            className="w-8 h-8 object-contain transition-transform duration-350 group-hover:scale-110" 
+                                            loading="lazy"
+                                        />
+                                        <h3 className="text-sm font-medium text-neutral-200 group-hover:text-white transition-colors duration-200 truncate">
+                                            {skill.name}
+                                        </h3>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </main>
         </div>
     );
 };
