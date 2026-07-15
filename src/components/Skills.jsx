@@ -3,13 +3,13 @@ import Header from './Header';
 
 const SkillsPage = () => {
     // Grouping your technical skills by category for a cleaner presentation
-    const skillCategories = [
+const skillCategories = [
         {
             title: "Languages",
             items: [
                 { name: 'Python', icon: "https://skillicons.dev/icons?i=python" },
-                { name: 'JavaScript', icon: "https://skillicons.dev/icons?i=javascript" },
                 { name: 'TypeScript', icon: "https://skillicons.dev/icons?i=ts" },
+                { name: 'JavaScript', icon: "https://skillicons.dev/icons?i=javascript" },
                 { name: 'Java', icon: "https://skillicons.dev/icons?i=java" },
                 { name: 'C++', icon: "https://skillicons.dev/icons?i=cpp" },
                 { name: 'C', icon: "https://skillicons.dev/icons?i=c" },
@@ -27,25 +27,35 @@ const SkillsPage = () => {
                 { name: 'Express.js', icon: "https://skillicons.dev/icons?i=expressjs" },
                 { name: 'Flask', icon: "https://skillicons.dev/icons?i=flask" },
                 { name: 'Tailwind CSS', icon: "https://skillicons.dev/icons?i=tailwind" },
-                { name: 'Selenium', icon: "https://skillicons.dev/icons?i=selenium" },
+                { name: 'Bootstrap', icon: "https://skillicons.dev/icons?i=bootstrap" },
             ]
         },
         {
-            title: "Databases & Cloud",
+            title: "Automation & Data Scraping",
+            items: [
+                { name: 'Selenium', icon: "https://skillicons.dev/icons?i=selenium" },
+                { name: 'Beautiful Soup', icon: "https://skillicons.dev/icons?i=python" }, // Uses Python icon as fallback
+                { name: 'Postman', icon: "https://skillicons.dev/icons?i=postman" },
+            ]
+        },
+        {
+            title: "Databases, Cloud & DevOps",
             items: [
                 { name: 'PostgreSQL', icon: "https://skillicons.dev/icons?i=postgresql" },
                 { name: 'MySQL', icon: "https://skillicons.dev/icons?i=mysql" },
                 { name: 'MongoDB', icon: "https://skillicons.dev/icons?i=mongodb" },
-                { name: 'Google Cloud', icon: "https://skillicons.dev/icons?i=gcp" },
                 { name: 'Docker', icon: "https://skillicons.dev/icons?i=docker" },
+                { name: 'Kubernetes', icon: "https://skillicons.dev/icons?i=kubernetes" },
+                { name: 'Apache Kafka', icon: "https://skillicons.dev/icons?i=kafka" },
+                { name: 'Google Cloud', icon: "https://skillicons.dev/icons?i=gcp" },
             ]
         },
         {
-            title: "Developer Tools",
+            title: "Developer Tools & Platforms",
             items: [
                 { name: 'Git', icon: "https://skillicons.dev/icons?i=git" },
                 { name: 'GitHub', icon: "https://skillicons.dev/icons?i=github" },
-                { name: 'Postman', icon: "https://skillicons.dev/icons?i=postman" },
+                { name: 'Netcracker OSS/BSS', icon: "https://skillicons.dev/icons?i=aws" }, // You can swap with a custom telecom icon if preferred
             ]
         }
     ];
