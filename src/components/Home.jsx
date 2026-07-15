@@ -58,7 +58,9 @@ const Home = () => {
                     
                     {/* Action Row */}
                     <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6">
-                        <Button text="Hire Me" href="/contact" />
+                        <div className="flex items-center">
+                            <Button text="Hire Me" href="/contact" />
+                        </div>
                         <div className="transform scale-110">
                             <Socials />
                         </div>
